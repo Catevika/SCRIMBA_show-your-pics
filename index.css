@@ -1,0 +1,71 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Write your code here 👇 */
+
+.panels {
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	height: 90vh;
+}
+
+.title {
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+}
+
+.panel {
+	width: 6vw;
+	height: 75vh;
+	margin: 0.2rem;
+	transition: width 0.5s ease-in;
+}
+
+.active {
+	width: 19.6vw;
+}
+
+@media only screen and (max-width: 1200px) {
+	.active {
+		width: 98vw;
+	}
+}
+
+.one {
+	background-image: url('./img/wolf.jpg');
+	background-clip: content-box;
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+}
+
+.second {
+	background-image: url('./img/wolf2.jpg');
+	background-clip: content-box;
+	background-position: 15% 25%;
+	background-repeat: no-repeat;
+}
+
+.third {
+	background-image: url('./img/wolf3.jpg');
+	background-clip: content-box;
+	background-position: 45% 65%;
+	background-repeat: no-repeat;
+}
+
+.fourth {
+	background-image: url('./img/wolf4.jpg');
+	background-clip: content-box;
+	background-position: 47% 53%;
+	background-repeat: no-repeat;
+}
+
+.fifth {
+	background-image: url('./img/wolf5.jpg');
+	background-clip: content-box;
+	background-position: 51% 30%;
+	background-repeat: no-repeat;
+}
